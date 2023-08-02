@@ -1,0 +1,40 @@
+.singleContent{
+    display: flex;
+    flex-direction: column;
+    width:200px;
+    background-color: rgb(244, 90, 236);
+    color: white;
+    padding:10px;
+    margin:5px;
+    border-radius: 7px;
+
+}
+.singleContent:hover{
+    color:#ff5af7;
+    background-color: #f9b469;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.singleContent h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.vote{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px dotted rgb(234, 139, 230);
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(101, 248, 250);
+    color: rgb(203, 2, 146);
+    
+}

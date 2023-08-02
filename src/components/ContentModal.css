@@ -1,0 +1,56 @@
+.MuiModal-root{
+    overflow-y: scroll;
+}
+.content-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title{
+    margin: 0 auto;
+}
+
+.content-modal img{
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom:10px;
+}
+
+.tagline{
+    margin-top:10px;
+    margin-bottom:15px;
+    text-align: center;
+    color: rgb(73, 72, 72) !important;
+
+}
+
+.overview{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    padding: 1rem;
+    box-shadow: 0 0 15px #16b4ee;
+    background-color: rgb(127, 168, 255);
+    margin:1rem;
+    border-radius: 5px;
+    color: rgb(255, 255, 255) !important;
+    margin:0 auto !important;
+
+
+}
+.title{
+    font-size: 1.5rem!important;
+    margin-top:5px;
+}
+.video{
+    display: flex!important;
+    margin:0 auto !important;
+    margin-top: 10px !important;
+    width:35%;
+    font-size: 0.8rem !important;
+    border-radius: 60px!important;
+    background-color: #ff5af7!important;
+ 
+
+}

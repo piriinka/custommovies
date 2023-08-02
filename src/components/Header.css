@@ -1,0 +1,13 @@
+.header{
+    width:100%;
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(127, 168, 255);
+    color: #ffffff;
+    font-size: 4vw;
+    margin:0;
+    padding: 0.5rem;
+    box-shadow: 0px 5px 5px black;
+    z-index: 100;
+}
