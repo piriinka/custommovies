@@ -1,15 +1,12 @@
 import { TextField, createTheme, ThemeProvider, Button } from '@mui/material'
 import React, { useState } from 'react'
 import SearchIcon from '@mui/icons-material/Search';
-import { SearchResults } from './SearchResults';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+import { StarsSearchResult } from './StarsSearchResult';
 
 
-export const SearchPage = () => {
+export const StarsPage = () => {
   const [searchText,setSearchText] =useState('')
   const [fetchData,setFetchData] = useState(false)
-  const [type, setType] = useState(0)
 
   const darkTheme = createTheme({
     palette: {
@@ -20,9 +17,6 @@ export const SearchPage = () => {
   const handleChangeText=(e)=>{
     setFetchData(false)
     setSearchText(e.target.value)
-  }
-  const handleChangeType=(e,newValue)=>{
-    setType(newValue)
   }
 
   //console.log(searchText,type)
@@ -41,14 +35,8 @@ export const SearchPage = () => {
       <SearchIcon />
       </Button>
      </div>
-
-     <Tabs value={type} textColor='primary' centered indicatorColor='primary' onChange={handleChangeType}>
-      <Tab label="Search Movies"/>
-      <Tab label="Search Series"/>
-      
-     </Tabs>
     </ThemeProvider>
-    {fetchData && <SearchResults searchText={searchText} type={type ? 'tv' : 'movie'}/>}
+    {fetchData && <StarsSearchResult searchText={searchText}/>}
     </div>
   )
 }

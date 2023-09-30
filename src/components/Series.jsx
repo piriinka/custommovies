@@ -23,8 +23,9 @@ status =='success' && console.log(data.results)
   return (
     <>
     <div className='content'>
-      {status =='success' && data.results.length>0 ?
+    {status =='success' && data.results.length>0 ?
       data.results.map(obj=>(
+
         <SingleContent
         key={obj.id}
         id={obj.id}

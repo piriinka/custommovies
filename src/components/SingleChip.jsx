@@ -7,7 +7,7 @@ export const SingleChip = ({id,name,selectedGenres,setSelectedGenres}) => {
     const [selected,setSelected]=useState(false)
 
     const handleClick=()=>{
-       console.log('clicked on chip')
+       //console.log('clicked on chip')
         if(selectedGenres.indexOf(id) === -1) {
             setSelected(true)
             setSelectedGenres((prev)=>[...prev,id])

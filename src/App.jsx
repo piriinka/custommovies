@@ -7,6 +7,7 @@ import { MoviesPage } from './components/MoviesPage'
 import { SeriesPage } from './components/SeriesPage'
 import { BottomNav } from './components/BottomNav'
 import { SearchPage } from './components/SearchPage'
+import {StarsPage } from './components/StarsPage'
 
 const queryClient = new QueryClient()
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/movies" element={<MoviesPage />} />
             <Route path="/series" element={<SeriesPage />} />
             <Route path="/search" element={<SearchPage />} />
+            <Route path="/stars" element={<StarsPage />} />
 
           </Routes>
           

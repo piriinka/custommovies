@@ -9,10 +9,11 @@ import { useLocation } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { makeStyles } from '@mui/styles';
 import SearchIcon from '@mui/icons-material/Search';
+import PersonSearchIcon from '@mui/icons-material/PersonSearch';
 
 const useStyles=makeStyles({
     root:{
-        width:320,
+        width:390,
         position:'fixed',
         bottom:0,
         zIndex:100,
@@ -53,6 +54,11 @@ export const BottomNav=()=>{
              component={NavLink}
              value='/search'
              to='/search'
+        />
+         <BottomNavigationAction label="Stars" icon={<PersonSearchIcon />} 
+             component={NavLink}
+             value='/stars'
+             to='/stars'
         />
       </BottomNavigation>
     </Box>
